@@ -1,0 +1,27 @@
+{
+  "name": "5vinkor-ru",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "owl-carousel": "^1.3.2",
+    "matchHeight": "matchheight#^0.7.0",
+    "magnific-popup": "^1.1.0",
+    "animate.css": "^3.5.2",
+    "aos": "^2.0.4",
+    "font-awesome": "^4.6.3"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
