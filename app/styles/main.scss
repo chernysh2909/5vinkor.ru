@@ -2,8 +2,48 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/font-awesome/scss/font-awesome.scss";
+
 // endbower
+@import "_fonts.scss";
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.15s linear 0s;
+  -moz-transition: all 0.15s linear 0s;
+  -o-transition: all 0.15s linear 0s;
+  -ms-transition: all 0.15s linear 0s;
+  transition: all 0.15s linear 0s;
+}
+
+a:focus {
+  outline: medium none;
+  text-decoration: none;
+}
+
+a img {
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  -o-transition: all 0.15s ease-in-out 0s;
+  -ms-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+body{
+	font-size: 10px;
+	font-family:"Open Sans";
+}
+
+
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -11,84 +51,269 @@ $icon-font-path: '../fonts/';
   color: #000;
   padding: 0.2em 0;
 }
-
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+#header-promotion {
+  padding-top: 10px;
+  .navigation {
+    margin-top: 30px;
+    ul {
+      padding: 0;
+      li {
+        display: inline-block;
+        a {
+          margin: 0 10px;
+          font-size: 1.8rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "Open Sans";
+          color: #747474;
+          &:hover {
+            color: #37beef;
+          }
+        }
+        .services-nav {
+          margin-left: 0;
+        }
+        .blog-nav {
+          margin-right: 0;
+        }
+      }
+    }
+    .dropdown-inside {
+      display: none;
+      position: absolute;
+      background-image: url("../images/menu_vp (2).png");
+      background-repeat: no-repeat;
+      background-position: top;
+      width: 658px;
+      height: 227px;
+      z-index: 1637;
+      li {
+        position: absolute;
+        a {
+          color: #56c2fb;
+          font-size: 1.2rem;
+          // font-family: MyriadPro-Regular, sans-serif;
+          font-family: "Open Sans";
+        }
+      }
+      #inside-first-link {
+        top: 90px;
+        left: 20px;
+      }
+      #inside-second-link {
+        top: 120px;
+        left: 20px;
+      }
+      #inside-third-link {
+        top: 150px;
+        left: 20px;
+      }
+      #web-develop {
+        color: #fff;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 1.7rem;
+        top: 50px;
+        left: 50px;
+        text-transform: uppercase;
+      }
+      #promotion {
+        color: #fff;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 1.7rem;
+        top: 50px;
+        left: 360px;
+        text-transform: uppercase;
+        #promotion-seo {
+          color: #56c2fb;
+          font-size: 1.2rem;
+          // font-family: MyriadPro-Regular, sans-serif;
+          text-transform: uppercase;
+        }
+      }
+      #promotion-seo {
+        top: 90px;
+        left: 320px;
+      }
+      #promotion-reklama {
+        top: 120px;
+        left: 320px;
+      }
+      #promotion-youtube {
+        top: 150px;
+        left: 320px;
+      }
+      #promotion-instagram {
+        top: 180px;
+        left: 320px;
+      }
+      .graff {
+        position: absolute;
+        top: 130px;
+        left: 575px;
+      }
+    }
+    .dropdown-inside-services {
+      display: none;
+      left: -25px;
+      position: absolute;
+      background-image: url("../images/menu_vp (2).png");
+      background-repeat: no-repeat;
+      background-position: top;
+      width: 658px;
+      height: 227px;
+      z-index: 1637;
+      li {
+        position: absolute;
+        a {
+          color: #56c2fb;
+          font-size: 1.2rem;
+          // font-family: MyriadPro-Regular, sans-serif;
+        }
+      }
+      #inside-first-link {
+        top: 90px;
+        left: 20px;
+      }
+      #inside-second-link {
+        top: 120px;
+        left: 20px;
+      }
+      #inside-third-link {
+        top: 150px;
+        left: 20px;
+      }
+      #web-develop {
+        color: #fff;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 1.7rem;
+        top: 50px;
+        left: 50px;
+        text-transform: uppercase;
+      }
+      #promotion {
+        color: #fff;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 1.7rem;
+        top: 50px;
+        left: 360px;
+        text-transform: uppercase;
+        #promotion-seo {
+          color: #56c2fb;
+          font-size: 1.2rem;
+          // font-family: MyriadPro-Regular, sans-serif;
+          text-transform: uppercase;
+        }
+      }
+      #promotion-seo {
+        top: 90px;
+        left: 320px;
+      }
+      #promotion-reklama {
+        top: 120px;
+        left: 320px;
+      }
+      #promotion-youtube {
+        top: 150px;
+        left: 320px;
+      }
+      #promotion-instagram {
+        top: 180px;
+        left: 320px;
+      }
+      .graff {
+        position: absolute;
+        top: 130px;
+        left: 575px;
+      }
+    }
+  }
+  .additionally {
+    color: #37beef;
+    // font-family: MyriadPro-Regular, sans-serif;
+    font-size: 2.2rem;
+    position: relative;
+    margin-top: 23px;
+    .phone {
+      text-decoration: none;
+      color: #3ac1f0;
+    }
+    .viber img {
+      margin-bottom: 5px;
+    }
+    .skype {
+      margin: 0 10px;
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .top-line {
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+#header{
+	background-image: url("../images/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: 650px;
+	.header-top-banner{
+		visibility: hidden;
+
+		margin-top: -2px;
+	}
+	.heading{
+		margin-top: 50px;
+
+		h2{
+			color: #fff;
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: "Open Sans";
+			font-weight: 300;
+			font-size: 6.5rem;
+			background-color: rgba(0, 0, 0, .6);
+			padding: 5px 30px;
+
+
+		}
+		h1{
+			color: #00b7f3;
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: "Open Sans";
+			font-weight: 800;
+			font-size: 8rem;
+			background-color: rgba(0, 0, 0, .6);
+			padding: 5px 30px;
+			margin-top: -10px;
+
+		}
+	}
+	.header-link{
+		margin-top: 60px;
+		a{
+			color: #fff;
+			text-decoration: none;
+			font-size: 3rem;
+			font-family:"Open Sans";
+			font-weight: 400;
+			letter-spacing: 1em;
+			b{
+				font-weight: 800;
+				border-bottom: 1px solid #fff;
+			}
+			&:hover{
+			color: #00b7f3;
+			}
+		}
+
+	}
 }
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+@import "_media.scss";

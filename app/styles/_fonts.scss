@@ -1,0 +1,13 @@
+$fonts-path: "../fonts/";
+//MyriadPro-Cond
+@font-face {
+    font-family: 'MyriadPro-Cond';
+    src: url($fonts-path+'MyriadPro-Cond/MyriadPro-Cond.eot?#iefix') format('embedded-opentype'), 
+    url($fonts-path+'MyriadPro-Cond/MyriadPro-Cond.otf') format('opentype'), 
+    url($fonts-path+'MyriadPro-Cond/MyriadPro-Cond.woff') format('woff'), 
+    url($fonts-path+'MyriadPro-Cond/MyriadPro-Cond.ttf') format('truetype');
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
