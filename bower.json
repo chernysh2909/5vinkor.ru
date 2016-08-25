@@ -11,7 +11,8 @@
     "aos": "^2.0.4",
     "font-awesome": "^4.6.3",
     "jquery.appear": "*",
-    "jquery-countTo": "countto#^1.2.0"
+    "jquery-countTo": "countto#^1.2.0",
+    "wow": "^1.1.2"
   },
   "overrides": {
     "bootstrap-sass": {
